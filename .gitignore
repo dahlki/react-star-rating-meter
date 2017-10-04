@@ -1,0 +1,8 @@
+node_modules
+bundle.js
+bundle.js.map
+public/dist/bundle.js
+public/dist/bundle.js.map
+.DS_Store
+npm-debug.log
+.Trashes
