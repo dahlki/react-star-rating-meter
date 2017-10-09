@@ -2,9 +2,9 @@ const LiveReloadPlugin = require('webpack-livereload-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: './client/index',
+  entry: './example/index',
   output: {
-    path: path.resolve(__dirname, 'public/dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   context: __dirname,
@@ -17,10 +17,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader',
-        options: {
-          presets: ['react', 'env', 'stage-3']
-        }
+        loader: 'babel-loader'
       },
       {
         test: /\.scss$/,
