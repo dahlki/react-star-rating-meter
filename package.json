@@ -1,5 +1,5 @@
 {
-  "name": "react-star-rating",
+  "name": "react-star-rating-meter",
   "version": "1.0.0",
   "description": "customizable React star rating component with meter",
   "main": "index.js",
