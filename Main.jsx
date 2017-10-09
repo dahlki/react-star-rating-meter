@@ -260,7 +260,7 @@ export default class Main extends Component {
 					meterBorderColor={"orange"}
 					meterBorderSize={5}
 					meterBorderStyle={"solid"}
-					highlightColor={"transparent"}
+					highlightColor={""}
 					highlightWidth={60}
 					starEmptyColor={"white"}
 					starSelectColor={"#89DAE0"}
@@ -300,11 +300,11 @@ export default class Main extends Component {
 					length={500}
 					svg={svgHeart}
 					meterEmptyColor={"#003400"}
-					meterSelectColor={"transparent"}
+					meterSelectColor={""}
 					meterBorderColor={"purple"}
 					meterBorderSize={0}
 					meterBorderStyle={"double"}
-					highlightColor={"transparent"}
+					highlightColor={""}
 					highlightWidth={60}
 					starEmptyColor={"#bba871"}
 					starSelectColor={"green"}
@@ -391,7 +391,7 @@ export default class Main extends Component {
 					length={520}
 					svg={svgCloud}
 					meterBorderSize={8}
-					meterSelectColor={"transparent"}
+					meterSelectColor={""}
 					meterBorderColor={"#d4d4f7"}
 					meterBorderStyle={"ridge"}
 					starEmptyColor={"#DEC3A4"}
