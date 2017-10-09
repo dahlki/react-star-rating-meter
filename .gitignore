@@ -5,4 +5,5 @@ dist/bundle.js
 dist/bundle.js.map
 .DS_Store
 npm-debug.log
+yarn-error.log
 .Trashes

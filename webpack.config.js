@@ -30,15 +30,6 @@ module.exports = {
       {
         test: /\.svg$/,
         loader: 'babel-loader!svg-react-loader'
-      },
-      {
-        test: /\.(png|jpg|gif|pdf)$/,
-        loader: "file-loader",
-        options: {
-          name: '[name].[ext]',
-          publicPath: 'assets/',
-          outputPath: '../assets/'
-        }
       }
     ]
   },
