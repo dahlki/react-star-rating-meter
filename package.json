@@ -1,6 +1,6 @@
 {
   "name": "react-star-rating-meter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a customizable React star rating component with meter",
   "main": "dist/index.js",
   "scripts": {

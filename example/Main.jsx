@@ -110,7 +110,7 @@ export default class Main extends Component {
 				<div style={textStyle}>rating: {this.state.starDefault}</div>
 			</div>,
 			<div style={ratingStyle} key={"noMeter"}>
-				<div style={titleStyle}>just stars</div>
+				<div style={titleStyle}>only stars</div>
 				<Rating
 					label={"noMeter"}
 					showMeter={false}
@@ -122,7 +122,7 @@ export default class Main extends Component {
 				<div style={textStyle}>rating: {this.state.noMeter}</div>
 			</div>,
 			<div style={ratingStyle} key={"svgRoundSqure"}>
-				<div style={titleStyle}>just 'stars' with custom svg, custom spacing</div>
+				<div style={titleStyle}>only 'stars' with custom svg, custom spacing</div>
 				<Rating
 					label={"svgRoundSqure"}
 					showMeter={false}
