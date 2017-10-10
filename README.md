@@ -8,7 +8,22 @@ code for the examples can be viewed in the **example** folder of this repo.
 
 ------------------------------
 
-## PROPERTIES:
+## install:
+
+https://www.npmjs.com/package/react-star-rating-meter
+
+```
+npm install --save react-star-rating-meter
+```
+
+or
+
+```
+yarn add react-star-rating-meter
+```
+------------------------------
+
+## properties:
 
 all properties are optional (properties will revert to default values)
 
