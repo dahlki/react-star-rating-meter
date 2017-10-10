@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["react-star-rating-meter"] = factory();
+	else
+		root["react-star-rating-meter"] = factory();
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -21557,7 +21567,7 @@ var Main = function (_Component) {
 					meterBorderColor: "orange",
 					meterBorderSize: 5,
 					meterBorderStyle: "solid",
-					highlightColor: "transparent",
+					highlightColor: "",
 					highlightWidth: 60,
 					starEmptyColor: "white",
 					starSelectColor: "#89DAE0",
@@ -21617,11 +21627,11 @@ var Main = function (_Component) {
 					length: 500,
 					svg: svgHeart,
 					meterEmptyColor: "#003400",
-					meterSelectColor: "transparent",
+					meterSelectColor: "",
 					meterBorderColor: "purple",
 					meterBorderSize: 0,
 					meterBorderStyle: "double",
-					highlightColor: "transparent",
+					highlightColor: "",
 					highlightWidth: 60,
 					starEmptyColor: "#bba871",
 					starSelectColor: "green",
@@ -21748,7 +21758,7 @@ var Main = function (_Component) {
 					length: 520,
 					svg: svgCloud,
 					meterBorderSize: 8,
-					meterSelectColor: "transparent",
+					meterSelectColor: "",
 					meterBorderColor: "#d4d4f7",
 					meterBorderStyle: "ridge",
 					starEmptyColor: "#DEC3A4",
@@ -21800,12 +21810,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _StarRating = __webpack_require__(34);
+var _StarRatingMeter = __webpack_require__(34);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_StarRating).default;
+    return _interopRequireDefault(_StarRatingMeter).default;
   }
 });
 
@@ -21848,13 +21858,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var StarRating = function (_Component) {
-	_inherits(StarRating, _Component);
+var StarRatingMeter = function (_Component) {
+	_inherits(StarRatingMeter, _Component);
 
-	function StarRating(props) {
-		_classCallCheck(this, StarRating);
+	function StarRatingMeter(props) {
+		_classCallCheck(this, StarRatingMeter);
 
-		var _this = _possibleConstructorReturn(this, (StarRating.__proto__ || Object.getPrototypeOf(StarRating)).call(this, props));
+		var _this = _possibleConstructorReturn(this, (StarRatingMeter.__proto__ || Object.getPrototypeOf(StarRatingMeter)).call(this, props));
 
 		_this.state = {
 			ratingMemo: 0,
@@ -21869,14 +21879,14 @@ var StarRating = function (_Component) {
 		return _this;
 	}
 
-	_createClass(StarRating, [{
+	_createClass(StarRatingMeter, [{
 		key: 'componentDidMount',
 		value: function componentDidMount() {
 			var initialRating = this.props.initialRating;
 
 			var rating = typeof initialRating === "number" && initialRating >= 0 ? initialRating : 0;
 			this.setState({ rating: rating, ratingMemo: rating });
-			this.props.getRating(rating, this.props.label);
+			this.props.getRating && this.props.getRating(rating, this.props.label);
 		}
 	}, {
 		key: 'handleHover',
@@ -22023,13 +22033,13 @@ var StarRating = function (_Component) {
 		}
 	}]);
 
-	return StarRating;
+	return StarRatingMeter;
 }(_react.Component);
 
-exports.default = StarRating;
+exports.default = StarRatingMeter;
 ;
 
-StarRating.propTypes = {
+StarRatingMeter.propTypes = {
 	readOnly: _propTypes2.default.bool,
 	numOfStars: _propTypes2.default.number,
 	initialRating: _propTypes2.default.number,
@@ -22061,7 +22071,7 @@ StarRating.propTypes = {
 
 };
 
-StarRating.defaultProps = {
+StarRatingMeter.defaultProps = {
 	readOnly: false,
 	numOfStars: 5,
 	initialRating: 0,
@@ -22407,4 +22417,5 @@ exports.default = Svg;
 
 /***/ })
 /******/ ]);
+});
 //# sourceMappingURL=bundle.js.map

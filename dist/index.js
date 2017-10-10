@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["react-star-rating-meter"] = factory();
+	else
+		root["react-star-rating-meter"] = factory();
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -59,6 +69,17 @@
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
 /******/
+/******/ 	// webpack-livereload-plugin
+/******/ 	(function() {
+/******/ 	  if (typeof window === "undefined") { return };
+/******/ 	  var id = "webpack-livereload-plugin-script";
+/******/ 	  if (document.getElementById(id)) { return; }
+/******/ 	  var el = document.createElement("script");
+/******/ 	  el.id = id;
+/******/ 	  el.async = true;
+/******/ 	  el.src = "//" + location.hostname + ":35729/livereload.js";
+/******/ 	  document.getElementsByTagName("head")[0].appendChild(el);
+/******/ 	}());
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
@@ -692,12 +713,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _StarRating = __webpack_require__(11);
+var _StarRatingMeter = __webpack_require__(11);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_StarRating).default;
+    return _interopRequireDefault(_StarRatingMeter).default;
   }
 });
 
@@ -740,13 +761,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var StarRating = function (_Component) {
-	_inherits(StarRating, _Component);
+var StarRatingMeter = function (_Component) {
+	_inherits(StarRatingMeter, _Component);
 
-	function StarRating(props) {
-		_classCallCheck(this, StarRating);
+	function StarRatingMeter(props) {
+		_classCallCheck(this, StarRatingMeter);
 
-		var _this = _possibleConstructorReturn(this, (StarRating.__proto__ || Object.getPrototypeOf(StarRating)).call(this, props));
+		var _this = _possibleConstructorReturn(this, (StarRatingMeter.__proto__ || Object.getPrototypeOf(StarRatingMeter)).call(this, props));
 
 		_this.state = {
 			ratingMemo: 0,
@@ -761,14 +782,14 @@ var StarRating = function (_Component) {
 		return _this;
 	}
 
-	_createClass(StarRating, [{
+	_createClass(StarRatingMeter, [{
 		key: 'componentDidMount',
 		value: function componentDidMount() {
 			var initialRating = this.props.initialRating;
 
 			var rating = typeof initialRating === "number" && initialRating >= 0 ? initialRating : 0;
 			this.setState({ rating: rating, ratingMemo: rating });
-			this.props.getRating(rating, this.props.label);
+			this.props.getRating && this.props.getRating(rating, this.props.label);
 		}
 	}, {
 		key: 'handleHover',
@@ -915,13 +936,13 @@ var StarRating = function (_Component) {
 		}
 	}]);
 
-	return StarRating;
+	return StarRatingMeter;
 }(_react.Component);
 
-exports.default = StarRating;
+exports.default = StarRatingMeter;
 ;
 
-StarRating.propTypes = {
+StarRatingMeter.propTypes = {
 	readOnly: _propTypes2.default.bool,
 	numOfStars: _propTypes2.default.number,
 	initialRating: _propTypes2.default.number,
@@ -953,7 +974,7 @@ StarRating.propTypes = {
 
 };
 
-StarRating.defaultProps = {
+StarRatingMeter.defaultProps = {
 	readOnly: false,
 	numOfStars: 5,
 	initialRating: 0,
@@ -3650,4 +3671,5 @@ exports.default = Svg;
 
 /***/ })
 /******/ ]);
+});
 //# sourceMappingURL=index.js.map

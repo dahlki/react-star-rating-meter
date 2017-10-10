@@ -4,7 +4,7 @@ import Meter from './Meter';
 import StarContainer from './StarContainer';
 
 
-export default class StarRating extends Component {
+export default class StarRatingMeter extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -23,7 +23,7 @@ export default class StarRating extends Component {
 		const {initialRating} = this.props
 		const rating = typeof initialRating === "number" && initialRating >= 0 ? initialRating : 0;
 		this.setState({rating, ratingMemo: rating});
-		this.props.getRating(rating, this.props.label)
+		this.props.getRating && this.props.getRating(rating, this.props.label)
 	}
 
 	handleHover(rating, e) {
@@ -100,7 +100,7 @@ export default class StarRating extends Component {
 		let starComponents = [];
 
 		for (let i = 0; i < this.props.numOfStars; i++) {
-			const selectedStar = this.state.rating === i + 1;
+			const selectedStar = this.state.rating === (i + 1);
 			starComponents.push(
 				<StarContainer
 					hover={this.handleHover}
@@ -143,7 +143,7 @@ export default class StarRating extends Component {
 	}
 };
 
-StarRating.propTypes = {
+StarRatingMeter.propTypes = {
 	readOnly: PropTypes.bool,
 	numOfStars: PropTypes.number,
 	initialRating: PropTypes.number,
@@ -175,7 +175,7 @@ StarRating.propTypes = {
 
 };
 
-StarRating.defaultProps = {
+StarRatingMeter.defaultProps = {
 	readOnly: false,
 	numOfStars: 5,
 	initialRating: 0,
