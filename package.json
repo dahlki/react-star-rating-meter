@@ -23,8 +23,7 @@
   "dependencies": {
     "path": "^0.12.7",
     "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react": "^16.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -34,6 +33,7 @@
     "babel-preset-stage-3": "^6.24.1",
     "css-loader": "^0.28.7",
     "node-sass": "^4.5.3",
+    "react-dom": "^16.0.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "svg-react-loader": "^0.4.5",
