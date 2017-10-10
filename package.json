@@ -1,7 +1,7 @@
 {
   "name": "react-star-rating-meter",
-  "version": "1.0.1",
-  "description": "customizable React star rating component with meter",
+  "version": "1.0.2",
+  "description": "a customizable React star rating component with meter",
   "main": "dist/index.js",
   "scripts": {
     "start-dev": "NODE_ENV='development' webpack -w & nodemon server -e html,js,css",
@@ -12,6 +12,14 @@
   },
   "author": "silvia sonn <dahlki78@gmail.com>",
   "license": "ISC",
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dahlki/react-star-rating-meter.git"
+  },
+  "homepage": "https://github.com/dahlki/react-star-rating-meter#readme",
+  "bugs": {
+    "url": "https://github.com/dahlki/react-star-rating-meter/issues"
+  },
   "keyword": [
     "react",
     "star",
