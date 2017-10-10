@@ -1,1 +1,1 @@
-export { default } from './components/StarRating';
+export { default } from './components/StarRatingMeter';
