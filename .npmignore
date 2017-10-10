@@ -3,3 +3,5 @@ webpack.config.js
 node_modules
 example
 src
+yarn.lock
+yarn-error.log
