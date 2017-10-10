@@ -21346,7 +21346,7 @@ var Main = function (_Component) {
 				_react2.default.createElement(
 					'div',
 					{ style: titleStyle },
-					'just stars'
+					'only stars'
 				),
 				_react2.default.createElement(_src2.default, {
 					label: "noMeter",
@@ -21368,7 +21368,7 @@ var Main = function (_Component) {
 				_react2.default.createElement(
 					'div',
 					{ style: titleStyle },
-					'just \'stars\' with custom svg, custom spacing'
+					'only \'stars\' with custom svg, custom spacing'
 				),
 				_react2.default.createElement(_src2.default, {
 					label: "svgRoundSqure",
