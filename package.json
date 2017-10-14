@@ -1,6 +1,6 @@
 {
   "name": "react-star-rating-meter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a customizable React star rating component with meter",
   "main": "dist/index.js",
   "scripts": {
@@ -20,9 +20,11 @@
   "bugs": {
     "url": "https://github.com/dahlki/react-star-rating-meter/issues"
   },
-  "keyword": [
+  "keywords": [
     "react",
+    "reactjs",
     "star",
+    "stars",
     "rating",
     "meter",
     "component",
