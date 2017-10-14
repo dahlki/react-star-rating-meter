@@ -20,9 +20,11 @@
   "bugs": {
     "url": "https://github.com/dahlki/react-star-rating-meter/issues"
   },
-  "keyword": [
+  "keywords": [
     "react",
+    "reactjs",
     "star",
+    "stars",
     "rating",
     "meter",
     "component",
